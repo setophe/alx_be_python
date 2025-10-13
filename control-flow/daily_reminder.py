@@ -14,19 +14,19 @@ while priority not in ["high", "medium", "low"]:
 # Match-case statement for priority levels
 match priority:
     case "high":
-        message = f"'{task}' is a high priority task."
+        reminder = f"'{task}' is a high priority task."
     case "medium":
-        message = f"'{task}' is a medium priority task."
+        reminder = f"'{task}' is a medium priority task."
     case "low":
-        message = f"'{task}' is a low priority task."
+        reminder = f"'{task}' is a low priority task."
     case _:
-        message = f"'{task}' has an unspecified priority."
+        reminder = f"'{task}' has an unspecified priority."
 
 # Add condition for time sensitivity
 if time_bound == "yes":
-    message += " It requires immediate attention today!"
+    reminder += " It requires immediate attention today!"
 else:
-    message += " Consider completing it when you have free time."
+    reminder += " Consider completing it when you have free time."
 
 # Print the customized reminder
-print("\nReminder:", message)
+print("\nReminder:", reminder)
