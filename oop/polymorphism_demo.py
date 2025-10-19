@@ -1,4 +1,4 @@
-from typing import override
+
 import math
 
 class Shape:
